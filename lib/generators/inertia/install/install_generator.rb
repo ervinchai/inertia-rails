@@ -152,7 +152,7 @@ module Inertia
       def install_tailwind
         say 'Installing Tailwind CSS'
         add_dependencies(%w[tailwindcss postcss autoprefixer @tailwindcss/forms @tailwindcss/typography
-                            @tailwindcss/container-queries])
+                            @tailwindcss/container-queries @tailwindcss/postcss])
 
         template 'tailwind/tailwind.config.js', file_path('tailwind.config.js')
         copy_file 'tailwind/postcss.config.js', file_path('postcss.config.js')
